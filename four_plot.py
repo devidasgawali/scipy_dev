@@ -1,0 +1,10 @@
+from pylab import *
+clf()
+x = linspace(-5*pi, 5*pi, 500)
+plot(x, x, 'b')
+plot(x, -x, 'b')
+plot(x,sin(x),'g',linewidth=2)
+plot(x,x*sin(x),'r',linewidth=2)
+legend(['x', '-x', 'sin(y)', 'xsin(x)'])
+annotate('origin', xy=(0, 0))
+show()
